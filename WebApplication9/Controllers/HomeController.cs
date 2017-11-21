@@ -115,7 +115,7 @@ namespace WebApplication9.Controllers
         public ActionResult DSort()
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            using (var fStream = System.IO.File.OpenRead(@"C:\Users\1\YandexDisk\WebApplication9/note.dat")) //Open file for serialize
+            using (var fStream = System.IO.File.OpenRead(@" ")) //Open file for serialize
 
             {
                 List<Book> noteBook = (List<Book>)formatter.Deserialize(fStream); //Create collection NoteBook
