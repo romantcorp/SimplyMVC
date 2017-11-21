@@ -1,0 +1,27 @@
+﻿
+    <div><h4>Результаты поиска</h4></div>
+    <table class="table table-bordered table-responsive table-hover">
+        <tr>
+            <th>Имя </th>
+            <th>Фамилия </th>
+            <th>Дата рождения </th>
+            <th>Телефон</th>
+        </tr>
+        <!Show result search>
+        @if (ViewBag.FindResult != null)
+        {
+            foreach (var book in ViewBag.FindResult)
+
+            {
+                <tr>
+                    <td>@book.FirstName</td>
+                    <td>@book.LastName</td>
+                    <td>@book.Data.ToShortDateString() </td>
+                    <td>@book.Phone</td>
+                </tr>}
+        }
+
+
+
+    </table>
+
